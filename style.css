@@ -1,0 +1,94 @@
+:root {
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body {
+    background-color: #011F26;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.background-container {
+    background-image: url("https://images.unsplash.com/photo-1544885935-98dd03b09034?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80");
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 60vw;
+    font-family: 'League Spartan', sans-serif;
+    color: #F1FCFC;
+    font-size: 2rem;
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
+    margin-top: 5rem;
+    background: rgb(1, 31, 38, 50%);
+}
+
+h1 {
+    margin: 1rem 0rem 0rem 1rem;
+}
+.container {
+    font-weight: 700; 
+    margin: 5rem 0rem;
+}
+
+.account-form-header {
+    margin: 3rem 0rem 3rem 3rem;
+}
+
+.form-row {
+    font-weight: 400;
+    display: flex;
+}
+
+.form-cell {
+    margin: 0.5rem 3rem 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row input{
+    width: 300px;
+    height: 25px;
+    border-radius: 0.3rem;
+    border: none;
+}    
+
+.form-row label{
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+}
+
+.form-info {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1rem 3rem;
+}
+
+.form-row button {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: #F1FCFC;
+    color: #015167;
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 0.3rem ;
+    margin: 3rem 0rem 1rem 3rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.login {
+    margin: 0rem 3rem;
+}
+
+.login span{
+    color: #F87368
+}
