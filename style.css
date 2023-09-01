@@ -1,5 +1,5 @@
 :root {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     color: #fff;
 }
@@ -28,7 +28,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;  
-    margin-top: 5rem;
+    margin-top: 8rem;
     background: rgb(1, 31, 38, 50%);
 }
 
@@ -60,11 +60,19 @@ h1 {
     height: 25px;
     border-radius: 0.3rem;
     border: none;
+    background-color: #F1FCFC;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }    
+
+.form-row input:focus {
+    outline: none;
+}
 
 .form-row label{
     font-size: 0.9rem;
     letter-spacing: 2px;
+    margin-bottom: 0.2rem;
 }
 
 .form-info {
@@ -73,22 +81,41 @@ h1 {
 }
 
 .form-row button {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.3rem;
     background-color: #F1FCFC;
     color: #015167;
     border: none;
     padding: 1rem 3rem;
-    border-radius: 0.3rem ;
-    margin: 3rem 0rem 1rem 3rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 0.6rem ;
+    margin: 3rem 0rem 0.5rem 3rem;
+    transition: all 0.4s ease-out
+}
+
+.form-row button:hover {
+    box-shadow: rgb(241, 252, 252, 30%) 0px 0px 15px;
+    transform: translateY(-0.1rem);
 }
 
 .login {
     margin: 0rem 3rem;
+    font-weight: 400;
 }
 
-.login span{
-    color: #F87368
+.login a{
+    color: #F87368;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#validationResult {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-top: 0.2rem;
+    color: #F87368;
+}
+
+svg {
+    fill: #F1FCFC;
 }
