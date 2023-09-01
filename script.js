@@ -2,7 +2,10 @@ const password = document.getElementById("password")
 const passwordConfirmation = document.getElementById("password_confirmation")
 
 const passwordValidation = (password1, password2) => {
-    if (password1 === password2) {
+    if (password2 === '') {
+        return;
+    } 
+    else if (password1 === password2) {
         const validationResult = document.getElementById("validationResult");
         if (validationResult) {
             validationResult.remove()
@@ -16,7 +19,7 @@ const passwordValidation = (password1, password2) => {
             return;
         }
         const validationResult = document.createElement("div");
-        validationResult.textContent = "PASSWORDS DO NOT MATCH";
+        validationResult.textContent = "PASSWORD DOES NOT MATCH";
         validationResult.id = "validationResult";
         confirmationPassword.after(validationResult);
     }
@@ -25,3 +28,8 @@ const passwordValidation = (password1, password2) => {
 passwordConfirmation.addEventListener('change', () => {
         passwordValidation(password.value, passwordConfirmation.value);
     })
+
+password.addEventListener('change', () => {
+        passwordValidation(password.value, passwordConfirmation.value);
+    })
+
