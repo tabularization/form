@@ -30,11 +30,13 @@ body {
     align-items: center;  
     margin-top: 8rem;
     background: rgb(1, 31, 38, 50%);
+    fill: #F1FCFC;
 }
 
 h1 {
     margin: 1rem 0rem 0rem 1rem;
 }
+
 .container {
     font-weight: 700; 
     margin: 5rem 0rem;
@@ -76,7 +78,7 @@ h1 {
 }
 
 .form-info {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
     padding: 1rem 3rem;
 }
 
@@ -116,6 +118,43 @@ h1 {
     color: #F87368;
 }
 
-svg {
-    fill: #F1FCFC;
+
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+    .background-container {
+        background-position: center; 
+        height: 70vh;
+        width: 100vw;
+    }
+    .icon {
+        display: none;
+    }
+    .container {
+        margin: 1rem;
+        max-width: 500px;
+    }
+    .account-form-header {
+        margin: 1rem 0rem 1rem 1rem;
+        font-size: 0.8rem;
+        max-width: 400px;
+    }
+    .form-info {
+        padding: 1rem 0;
+    }
+    .form-info > .form-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-header {
+        margin-left: 1rem;
+    }
+    .form-row button {
+        margin: 1rem 0rem 0.5rem 1rem;
+    }
+    .login {
+        margin: 0rem 1rem;
+    }
+
 }
